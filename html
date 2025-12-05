@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SUNSTONE</h1>
+            <h2>📚 Online Attendance System</h2>
+            <p>Track and manage student attendance efficiently</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="subjectSelect">Subject:</label>
+                <select id="subjectSelect">
+                    <option value="">Select Subject</option>
+                </select>
+
+                <label for="dateInput">Date:</label>
+                <input type="date" id="dateInput">
+
+                <button class="btn btn-primary" onclick="loadAttendance()">Load Attendance</button>
+                <button class="btn btn-success" onclick="saveAttendance()">Save Attendance</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="totalStudents">0</h3>
+                    <p>Total Students</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="presentCount">0</h3>
+                    <p>Present Today</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="absentCount">0</h3>
+                    <p>Absent Today</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="avgAttendance">0%</h3>
+                    <p>Average Attendance</p>
+                </div>
+            </div>
+
+            <div id="attendanceTable"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
