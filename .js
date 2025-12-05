@@ -1,3 +1,4 @@
+@ -1,182 +0,0 @@
 const subjects = {
     'Java Script': { time: '09:00 AM - 10:30 AM', code: 'BCA617A' },
     'Web technology with HTML and CSS': { time: '10:45 AM - 12:15 PM', code: 'BCA619A' },
